@@ -1,12 +1,17 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 /**
  * main - Entry point
- *
+ * program that write exactly: and that piece of art is useful" - Dora Korpar, 2015-10-19,
+ * followed by a new line, to the standard error.
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	write("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	char Art[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+	write(STDOUT_FILENO, Art, sizeof(Art) - 1);
+
 	return (1);
 }
