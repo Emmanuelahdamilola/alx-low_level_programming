@@ -5,35 +5,34 @@
 */
 void print_times_table(int n)
 {
-	int i, j, k;
+	int dig, mult, pro;
 
 	if (n >= 0 && n <= 15)
 	{
-		for (i = 0; i <= n; i++)
-		{
-			_putchar('0');
-			for (j = 1; j <= n; j++)
-			{
-				_putchar(',');
-				_putchar(' ');
-				k = i * j;
-				if (k <= 90)
-					_putchar(' ');
-				if (k <= 9)
-				_putchar(' ');
-				if (k >= 100)
-				{
-					_putchar((k / 100) + '0');
-					_putchar(((k / 10)) % 10 + '0');
-				}
-				else if (k <= 99 && k >= 10)
-				{
-					_putchar((k / 10) + '0');
-				}
-			_putchar((k % 10) + '0');
-			}
-			_putchar('\n');
-		}	
+	for (dig = 0; dig <= n; dig++)
+	{
+	_putchar('0');
+	for (mult = 1; mult <= n; mult++)
+	{
+	_putchar(',');
+	_putchar(' ');
+	pro = dig * mult;
+	if (pro <= 99)
+	_putchar(' ');
+	if (pro <= 9)
+	_putchar(' ');
+	if (pro >= 100)
+	{
+	_putchar((pro / 100) + '0');
+	_putchar(((pro / 10)) % 10 + '0');
+	}
+	else if (pro <= 99 && pro >= 10)
+	{
+	_putchar((pro / 10) + '0');
+	}
+	_putchar((pro % 10) + '0');
+	}
+	_putchar('\n');
+	}
 	}
 }
-
