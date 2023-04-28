@@ -6,16 +6,5 @@
 */
 void print_line(int n)
 {
-	int i;
-
-	if (i == 95)
-	if (n > 0)
-	{
-		_putchar(i * n);
-	}
-	else
-	{
-		n <= 0;
-		_putchar('\n');
-	}
-}
+	
+	
