@@ -19,7 +19,7 @@ printf("%d\n", nb);
 nb = _atoi("214748364");
 printf("%d\n", nb);
 nb = _atoi("0");
-rintf("%d\n", nb);
+printf("%d\n", nb);
 nb = _atoi("Suite 402");
 printf("%d\n", nb);
 nb = _atoi("  +  +  - -98 Battery Street; San Francisco, CA 94111 - USA");
