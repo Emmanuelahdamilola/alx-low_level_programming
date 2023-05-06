@@ -1,10 +1,36 @@
 #include "main.h"
 /**
+ * rev_string - reverses string array
+ * @n: integer input
+ * Return: Always return 0
+ */
+
+void rev_string(char *n)
+{
+	int i = 0;
+	int j = 0;
+	char temp;
+
+	while (*(n + i) != '\0')
+	{
+		i++;
+	}
+	i--;
+
+	for (j = 0; j < i; j++, i--)
+	{
+		temp = *(n + j);
+		*(n + j) = *(n + i);
+		*(n + i) = temp;
+	}
+}
+
+/**
  * infinite_add - adds two numbers.
  * Description: function that adds two numbers.
  * @n1: string value
  * @n2: string value
- * @r: string value
+ * @r: pointer to pointer
  * @size_r:input integer
  * Return: Always return 0
 */
