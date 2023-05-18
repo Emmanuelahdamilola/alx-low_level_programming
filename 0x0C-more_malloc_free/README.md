@@ -30,6 +30,10 @@ Tasks:
     - Return: the pointer to the newly created array
     - If min > max, return NULL
     - If malloc fails, return NULL
+<<<<<<< HEAD
+=======
+
+>>>>>>> 23f2d0a5ff86655251edaae7095b2c5bc1d0c7a1
 4. _realloc
 * Write a function that reallocates a memory block using malloc and free
     - Prototype: void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
