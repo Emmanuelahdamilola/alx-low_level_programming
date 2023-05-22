@@ -2,7 +2,7 @@
 #define MACROS_H
 
 /**
- * struct dog - structure tag for the structure elements
+ * dog_t - structure tag for the structure elements
  * @name: structure member
  * @age: structure member
  * @owner: structure member
