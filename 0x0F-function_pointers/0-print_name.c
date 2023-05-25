@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_time - function that prints a name.
+ * print_name - function that prints a name.
  * @name: string to be added
  * @f: function pointer
  * Return: Nothing
