@@ -9,9 +9,8 @@ void check_elf(unsigned char *e_ident)
 {
 	int i = 0;
 
-	while (i < 4)
+	for (; i < 4; i++)
 	{
-		i++;
 		if (e_ident[i] != 127 &&
 		    e_ident[i] != 'E' &&
 		    e_ident[i] != 'L' &&
